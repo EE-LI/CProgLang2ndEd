@@ -1,0 +1,25 @@
+//
+//  main.c
+//  Chapter_2
+//
+//  Created by Eli Erkins on 10/24/23.
+//
+
+#include <stdio.h>
+
+int main(void)
+{
+    float user;
+    float calc;
+    
+    printf("Please enter a dollars-and-cents amount: $ ");
+    scanf("%f", &user);
+    printf("You entered $%.2f\n", user);
+    
+    calc = user * 1.05;
+    
+    printf("------\n");
+    printf("Tax included, the total is: $%.2f\n", calc);
+    
+    return 0;
+}
